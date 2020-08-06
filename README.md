@@ -1,6 +1,7 @@
-![genbu.studio dotfiles](./docs/images/dotfiles.png)
-
-<div style="text-align:center;">コマンド1つで、環境ができあがり。</div>
+<div align="center">
+  <p><img src="./docs/images/dotfiles.png" alt="genbu.studio dotfiles"></p>
+  <p>コマンド1つで、環境ができあがり。</p>
+</div>
 
 ## インストール方法
 ```shell
