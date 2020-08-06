@@ -1,6 +1,10 @@
 <div align="center">
   <p><img src="./docs/images/dotfiles.png" alt="genbu.studio dotfiles"></p>
   <p>コマンド1つで、環境ができあがり。</p>
+  <p>
+    <img src="https://img.shields.io/github/repo-size/genbuchan/dotfiles">
+    <img src="https://img.shields.io/github/license/Genbuchan/dotfiles">
+  </p>
 </div>
 
 ## インストール方法
