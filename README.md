@@ -1,8 +1,6 @@
-# genbu.studio dotfiles
-
 ![genbu.studio dotfiles](./docs/images/dotfiles.png)
 
-コマンド1つで、環境ができあがり。
+<div style="text-align:center;">コマンド1つで、環境ができあがり。</div>
 
 ## インストール方法
 ```shell
@@ -11,9 +9,10 @@ $ curl -L dotfiles.genbu.studio/$(uname) | bash
 
 ## 動作環境
 
-
 ### macOS
-- macOS 10.15.6
+- macOS 10.15
+
+### Linux
 - Debian GNU/Linux 10 Buster
 - Ubuntu 20.04 LTS
 
