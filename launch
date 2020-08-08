@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# カレントディレクトリを変更しないように対策
+bash -c "
+  cd /tmp
+  curl -o dotfiles.tar.gz -L https://github.com/Genbuchan/dotfiles/archive/mainstream.tar.gz
+  tar -zxvf dotfiles.tar.gz
+  ls /tmp/dotfiles-mainstream/
+  echo 'complete'
+  cd /tmp/dotfiles-mainstream/
+  ./installer/main.sh
+"
