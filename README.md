@@ -10,7 +10,7 @@
 
 ## インストール方法
 ```shell
-$ curl -L dotfiles.genbu.studio/$(uname) | bash
+$ /bin/bash -c "$(curl -fsSL dotfiles.genbu.studio/launch)"
 ```
 
 ## 動作環境
