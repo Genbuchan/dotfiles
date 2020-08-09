@@ -37,9 +37,12 @@ for module in ${modules_dir[@]}; do
         # メタデータを読み込み
         . ./modules/$module/module.sh
         
-        modules+=($module)
+        let i++
+        modules+=("$module")
         modules_name+=("$module_name")
         modules_desc+=("$module_desc")
+        
+        # modules_desc+=( $(echo \"${module_desc}\") )
         
         # modules_name+=(${MODULE_INFO["platform"]})
         # 安全にモジュールのディレクトリに移動し、初期化スクリプトを実行
@@ -54,13 +57,13 @@ IFS=$IFS_TMP
 unset $IFS_TMP
 
 . ./installer/menu.sh
+# menu "${modules[*]}" "${modules_name[*]}" "${modules_desc[*]}"
 
-menu
+menu "modules" "modules_name" "modules_desc"
 
-
-for workflow in ${setup_selected[@]}; do
+for workflow in ${menu_selected_items[@]}; do
     . ./modules/$workflow/module.sh
-    bash -c "cd ./modules/$workflow && cat $module_init | bash"
+    bash -c "cd ./modules/$workflow && ./$module_init"
     for module_meta_item in ${module_meta[@]}; do
         unset $module_meta_item
     done

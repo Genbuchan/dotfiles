@@ -1,12 +1,28 @@
 #!/bin/bash
 
+softwares=("google chrome" "discord")
+softwares_name=("Google Chrome" "Discord")
+softwares_desc=("Google が開発した、インターネットブラウザ" "話せる、あなたの居場所")
+
 function main() {
-    install_brew
+    ls ../../installer/
+    . ../../installer/menu.sh
+    menu "softwares" "softwares_name" "softwares_desc"
+    for ((i=0; i < ${#menu_selected_items[@]}; i++)); do
+        
+        if [[ ${menu_selected_items[i]} == "google chrome" ]]; then
+            echo "Google Chrome をインストールしています"
+            brew cask install google-chrome
+        fi
+        
+        if [[ ${menu_selected_items[i]} == "discord" ]]; then
+            echo "Discord をインストールしています"
+            brew cask install discord
+        fi
+        
+    done
 }
 
-function install_brew() {
-    echo "Google Chrome をインストールしています…"
-    # curl -L "https://raw.githubusercontent.com/Homebrew/install/master/install.sh" | bash
-}
+
 
 main
