@@ -26,17 +26,17 @@ function main() {
         
         if [[ ${menu_selected_items[i]} == "adobe creative cloud" ]]; then
             echo "Adobe Creative Cloud をインストールしています"
-            brew cask install adobe-creative-cloud
+            brew install --cask adobe-creative-cloud
         fi
         
         if [[ ${menu_selected_items[i]} == "blender" ]]; then
             echo "Blender をインストールしています"
-            brew cask install blender
+            brew install --cask blender
         fi
         
         if [[ ${menu_selected_items[i]} == "figma" ]]; then
             echo "Figma をインストールしています"
-            brew cask install figma
+            brew install --cask figma
         fi
         
     done

@@ -29,7 +29,7 @@ function main() {
         
         if [[ ${menu_selected_items[i]} == "vscode" ]]; then
             echo "Visual Studio Code をインストールしています"
-            brew cask install vscode
+            brew install --cask vscode
         fi
         
         if [[ ${menu_selected_items[i]} == "hyper" ]]; then
@@ -40,7 +40,7 @@ function main() {
         
         if [[ ${menu_selected_items[i]} == "docker" ]]; then
             echo "Docker をインストールしています"
-            brew cask install docker
+            brew install --cask docker
         fi
         
         if [[ ${menu_selected_items[i]} == "zsh" ]]; then

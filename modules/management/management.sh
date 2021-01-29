@@ -20,7 +20,7 @@ function main() {
         
         if [[ ${menu_selected_items[i]} == "notion" ]]; then
             echo "Notion をインストールしています"
-            brew cask install notion
+            brew install --cask notion
         fi
         
     done

@@ -29,22 +29,22 @@ function main() {
         
         if [[ ${menu_selected_items[i]} == "google chrome" ]]; then
             echo "Google Chrome をインストールしています"
-            brew cask install google-chrome
+            brew install --cask google-chrome
         fi
         
         if [[ ${menu_selected_items[i]} == "firefox developer edition" ]]; then
             echo "Firefox Developer Edition をインストールしています"
-            brew cask install firefox-developer-edition
+            brew install --cask firefox-developer-edition
         fi
         
         if [[ ${menu_selected_items[i]} == "discord" ]]; then
             echo "Discord をインストールしています"
-            brew cask install discord
+            brew install --cask discord
         fi
         
         if [[ ${menu_selected_items[i]} == "zoomus" ]]; then
             echo "Zoom をインストールしています"
-            brew cask install zoomus
+            brew install --cask zoomus
         fi
         
     done
